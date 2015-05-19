@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Deom View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="DeomViewController" customModule="CountdownView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,69 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRq-SY-t43" customClass="CountDownView" customModule="CountdownView" customModuleProvider="target">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="50m-DJ-WXO"/>
+                                    <constraint firstAttribute="height" constant="200" id="Qke-26-SM5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASY-v3-A6g">
+                                <rect key="frame" x="20" y="530" width="560" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyP-cZ-Npx">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="UPStart!!">
+                                            <color key="titleColor" red="0.13719223480000001" green="0.13719223480000001" blue="0.13719223480000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="upStart:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ggJ-dL-1mS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT8-dH-mVg">
+                                        <rect key="frame" x="285" y="0.0" width="275" height="50"/>
+                                        <color key="backgroundColor" red="0.13719223480000001" green="0.13719223480000001" blue="0.13719223480000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="DownStart!!">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downStart:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sGY-OK-IAD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="11E-cz-PMb"/>
+                                    <constraint firstItem="VyP-cZ-Npx" firstAttribute="leading" secondItem="ASY-v3-A6g" secondAttribute="leading" id="9d6-i5-jHo"/>
+                                    <constraint firstAttribute="trailing" secondItem="gT8-dH-mVg" secondAttribute="trailing" id="IGF-dj-ZEV"/>
+                                    <constraint firstAttribute="bottom" secondItem="VyP-cZ-Npx" secondAttribute="bottom" id="QC0-Ku-rBo"/>
+                                    <constraint firstItem="gT8-dH-mVg" firstAttribute="height" secondItem="VyP-cZ-Npx" secondAttribute="height" id="ZAR-hF-jEd"/>
+                                    <constraint firstItem="VyP-cZ-Npx" firstAttribute="top" secondItem="ASY-v3-A6g" secondAttribute="top" id="hKq-IV-Wjo"/>
+                                    <constraint firstItem="gT8-dH-mVg" firstAttribute="leading" secondItem="VyP-cZ-Npx" secondAttribute="trailing" constant="10" id="laV-Bh-aOP"/>
+                                    <constraint firstItem="gT8-dH-mVg" firstAttribute="width" secondItem="VyP-cZ-Npx" secondAttribute="width" id="mLA-v3-im8"/>
+                                    <constraint firstItem="gT8-dH-mVg" firstAttribute="centerY" secondItem="VyP-cZ-Npx" secondAttribute="centerY" id="yKV-0Q-VKL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69583961750810519" green="0.85882352939999995" blue="0.67000407378705618" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ASY-v3-A6g" secondAttribute="bottom" constant="20" id="5nm-jw-i2M"/>
+                            <constraint firstAttribute="trailing" secondItem="ASY-v3-A6g" secondAttribute="trailing" constant="20" id="SXN-qh-VSX"/>
+                            <constraint firstAttribute="centerX" secondItem="gRq-SY-t43" secondAttribute="centerX" id="eU0-XU-0cM"/>
+                            <constraint firstAttribute="centerY" secondItem="gRq-SY-t43" secondAttribute="centerY" id="hHw-rc-Am3"/>
+                            <constraint firstItem="ASY-v3-A6g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="nC6-f0-GMu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countDownView" destination="gRq-SY-t43" id="laD-Nb-upP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8D8D7DB01B09F98A003A00AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D7DAF1B09F98A003A00AB /* AppDelegate.swift */; };
-		8D8D7DB21B09F98A003A00AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D7DB11B09F98A003A00AB /* ViewController.swift */; };
+		8D8D7DB21B09F98A003A00AB /* DeomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D7DB11B09F98A003A00AB /* DeomViewController.swift */; };
 		8D8D7DB51B09F98A003A00AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D7DB31B09F98A003A00AB /* Main.storyboard */; };
 		8D8D7DB71B09F98A003A00AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D7DB61B09F98A003A00AB /* Images.xcassets */; };
 		8D8D7DBA1B09F98A003A00AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D7DB81B09F98A003A00AB /* LaunchScreen.xib */; };
 		8D8D7DC61B09F98A003A00AB /* CountdownViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D7DC51B09F98A003A00AB /* CountdownViewTests.swift */; };
+		8D8D7DD01B09F9E6003A00AB /* CountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D7DCF1B09F9E6003A00AB /* CountDownView.swift */; };
+		8D8D7DD21B09F9F2003A00AB /* CountDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D7DD11B09F9F2003A00AB /* CountDownView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		8D8D7DAA1B09F98A003A00AB /* CountdownView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8D7DAE1B09F98A003A00AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D8D7DAF1B09F98A003A00AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D8D7DB11B09F98A003A00AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D8D7DB11B09F98A003A00AB /* DeomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeomViewController.swift; sourceTree = "<group>"; };
 		8D8D7DB41B09F98A003A00AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D8D7DB61B09F98A003A00AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8D8D7DB91B09F98A003A00AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8D8D7DBF1B09F98A003A00AB /* CountdownViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8D7DC41B09F98A003A00AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D8D7DC51B09F98A003A00AB /* CountdownViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewTests.swift; sourceTree = "<group>"; };
+		8D8D7DCF1B09F9E6003A00AB /* CountDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownView.swift; sourceTree = "<group>"; };
+		8D8D7DD11B09F9F2003A00AB /* CountDownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountDownView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				8D8D7DAF1B09F98A003A00AB /* AppDelegate.swift */,
-				8D8D7DB11B09F98A003A00AB /* ViewController.swift */,
+				8D8D7DB11B09F98A003A00AB /* DeomViewController.swift */,
+				8D8D7DCF1B09F9E6003A00AB /* CountDownView.swift */,
+				8D8D7DD11B09F9F2003A00AB /* CountDownView.xib */,
 				8D8D7DB31B09F98A003A00AB /* Main.storyboard */,
 				8D8D7DB61B09F98A003A00AB /* Images.xcassets */,
 				8D8D7DB81B09F98A003A00AB /* LaunchScreen.xib */,
@@ -194,6 +200,7 @@
 			files = (
 				8D8D7DB51B09F98A003A00AB /* Main.storyboard in Resources */,
 				8D8D7DBA1B09F98A003A00AB /* LaunchScreen.xib in Resources */,
+				8D8D7DD21B09F9F2003A00AB /* CountDownView.xib in Resources */,
 				8D8D7DB71B09F98A003A00AB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D8D7DB21B09F98A003A00AB /* ViewController.swift in Sources */,
+				8D8D7DB21B09F98A003A00AB /* DeomViewController.swift in Sources */,
 				8D8D7DB01B09F98A003A00AB /* AppDelegate.swift in Sources */,
+				8D8D7DD01B09F9E6003A00AB /* CountDownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				8D8D7DCB1B09F98A003A00AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D8D7DCC1B09F98A003A00AB /* Build configuration list for PBXNativeTarget "CountdownViewTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				8D8D7DCE1B09F98A003A00AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
